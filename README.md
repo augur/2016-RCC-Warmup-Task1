@@ -1,4 +1,7 @@
 # 2016-RCC-Warmup-Task1
+
+More info here: https://habrahabr.ru/post/282431/
+
 ```
 $ ./cpp_measure.sh 
 solution1.cpp (with diff):
