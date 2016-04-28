@@ -5,6 +5,7 @@ int main() {
 
   std::string code;
   std::getline(std::cin, code);
+  code.erase(code.find_last_not_of(" \n\r\t") + 1);
 
   std::string s_tries_count;
   std::getline(std::cin, s_tries_count);
@@ -12,6 +13,7 @@ int main() {
   std::string tries[tries_count];
   for(int i = 0; i < tries_count; i++) {
     std::getline(std::cin, tries[i]);
+    tries[i].erase(tries[i].find_last_not_of(" \n\r\t")+1);
   };
 
   std::map<std::string, int> code_h;
