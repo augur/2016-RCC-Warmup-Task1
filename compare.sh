@@ -9,7 +9,7 @@ SOLVE_CPP_OUT="$BUILD_DIR/cpp.output"
 SOLVE_RUBY_APP="ruby ./solutions/solution1.rb"
 SOLVE_RUBY_OUT="$BUILD_DIR/ruby.out"
 
-rm -rf BUILD_DIR && mkdir -p BUILD_DIR
+rm -rf $BUILD_DIR && mkdir -p $BUILD_DIR
 echo "... make checker" && g++ -w -O2 -o "$CHECK_APP" "$CHECK_CPP"
 echo "... make cpp solution" && g++ -x c++ -std=c++0x -O2 -o "$SOLVE_CPP_APP" "$SOLVE_CPP"
 echo "... compare solutions"
